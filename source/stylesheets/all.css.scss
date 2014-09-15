@@ -1,0 +1,39 @@
+@import "normalize.scss";
+@import "foundation.scss";
+@import "base/colors";
+@import "base/typography";
+
+body {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6ebfe), color-stop(50%,#e9e2ec), color-stop(50%,#e9e2ec), color-stop(100%,#fed8d8)) fixed no-repeat;
+	text-align: center;
+}
+
+.row {
+	text-align: left;
+}
+
+footer.row {
+	border-top: 1px solid rgba(255, 255, 255, 0.5); ;
+	margin-top: 50px;
+	padding: 30px 0;
+}
+
+input[type="text"] {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 0 !important;
+	border-radius: 3px;
+	padding-top: 11px;
+}
+
+input[type="submit"] {
+	background: $secondary;
+	border: 0 !important;
+	border-radius: 3px;
+	padding: 5px 6px 0;
+	color: #FFF;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #CCC;
+}
