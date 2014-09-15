@@ -1,0 +1,13 @@
+---
+title: Portfolio of Software Designer, Eric Benoit
+description: Software designed by Eric Benoit for Startups, Fortune 500's, and pet projects.
+keywords: boston ui designer, boston ux designer, user interface designer, user experience designer, product designer, software designer
+---
+
+<h1>Portfolio</h1>
+<div>
+  <% data.clients.each do |client| %>
+  <h4><%= client.name %></h4>
+  <p><%= client.months %></p>
+  <% end %>
+</div>
