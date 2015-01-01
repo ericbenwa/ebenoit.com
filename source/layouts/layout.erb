@@ -7,9 +7,12 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Eric Benoit, Software Designer" %></title>
+    <title><%= current_page.data.title || "Eric Benoit, UX Designer" %></title>
+    <meta name="author" content="Eric Benoit">
     <meta name="description" content="<%= current_page.data.description %>">
     <meta name="keywords" content="<%= current_page.data.keywords %>">
+    <meta name="robots" content="index,follow">
+    <meta name="site" content="Eric Benoit Boston UX Designer">
  
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />   
     <%= stylesheet_link_tag "all" %>
@@ -25,6 +28,17 @@
       </div>
     </div>
 
-    <%= partial "layouts/footer" %>
+    <!-- <%= partial "layouts/footer" %> -->
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-2039737-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
   </body>
 </html>
