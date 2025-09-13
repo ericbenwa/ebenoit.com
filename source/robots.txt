@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /clients/
-Disallow: /v1/
-Disallow: /v2/
-Disallow: /v3/
